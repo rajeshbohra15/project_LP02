@@ -334,8 +334,6 @@ p{
 }
 .footer .form-row h2{
     text-align: center;
-    padding-left: 150px;
-    padding-right: 150px;
     padding: 0 150px 30px ;
 }
 
@@ -382,3 +380,107 @@ p{
 .border {
     border-bottom: 1px solid #4c4b4b;
 }
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: auto;
+    }
+    .navbar{
+        display: none;
+    }
+    .banner .banner-wrapper{
+        flex-wrap: wrap;
+    }
+    .banner .content{
+        padding-right: 0;
+    }
+    .banner .banner-wrapper img{
+        width: 100%;
+        padding-top: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .testimonial .content-row{
+        flex-wrap: wrap;
+    }
+    .logo .logo-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo .logo-grid img {
+        padding: 10px;
+    }
+    .service,
+    .testimonial,
+    .footer{
+        padding: 50px 0;
+    }
+    .service .content-box p,
+    .service-section .service-box{
+        width: 100%;
+    }
+    .service-section .service-box{
+        margin-bottom: 20px;
+    }
+    .service-section {
+        flex-wrap: wrap;
+    }
+    .faq h2{
+        padding-right: 0;
+    }
+    .faq-column{
+        flex-wrap: wrap;
+    }
+    .faq .faq-que{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .faq .faq-que .que{
+        padding: 10px 20px
+    }
+    .faq .faq-que .que h3{
+        font-size: 14px;
+    }
+    .pricing h2{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .pricing .pricing-column {
+        flex-wrap: wrap;
+    }
+    .pricing .pricing-box{
+        width: 100%;
+    }
+    .testimonial .content-row h2{
+        padding-right: 0;
+    }
+    .testimonial .testimonia-section .content-box{
+        width: 100%;
+    }
+    .footer .form-row h2{
+       padding: 0 0 30px 0;
+    }
+    .footer .form-row .form-wrapper{
+        flex-wrap: wrap;
+    }
+    .footer .form-row .form-wrapper .input-text{
+        padding-bottom: 20px;
+    }
+    .footer .footer-menu{
+        flex-wrap: wrap;
+    }
+    .footer .footer-menu .menu-1{
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .footer .footer-menu{
+        padding: 30px 0;
+    }
+}
+    

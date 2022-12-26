@@ -218,10 +218,32 @@ p{
     padding: 50px 0;
 }
 .pricing h2{
-    width: 70%;
     text-align: center;
     margin: auto;
-    padding-bottom: 100px;
+    padding: 0 200px 100px;
+    position: relative;
+}
+.pricing h2:before {
+    content: '';
+    position: absolute;
+    background-image: url('./images/arrow-left.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 10px;
+    top: 50px;
+}
+.pricing h2:after {
+    content: '';
+    position: absolute;
+    background-image: url('./images/arrow-right.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    right: 10px;
+    top: 50px;
 }
 .pricing .pricing-box {
     background-color: white;
@@ -448,8 +470,11 @@ p{
         font-size: 14px;
     }
     .pricing h2{
-        width: 100%;
-        padding-bottom: 30px;
+        padding:0 0 30px;
+    }
+    .pricing h2:before,
+    .pricing h2:after{
+        display: none;
     }
     .pricing .pricing-column {
         flex-wrap: wrap;
